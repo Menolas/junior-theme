@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52.779" height="13.493" viewBox="0 0 52.779 13.493">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1.184" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ef4864"/>
+      <stop offset="1" stop-color="#ff062f"/>
+    </linearGradient>
+  </defs>
+  <g id="Сгруппировать_4738" data-name="Сгруппировать 4738" transform="translate(-737.989 -596.004)">
+    <rect id="Прямоугольник_1140" data-name="Прямоугольник 1140" width="52.779" height="13.493" rx="6.746" transform="translate(737.989 596.004)" fill="url(#linear-gradient)"/>
+    <text id="foodtech" transform="translate(764 605)" fill="#fff" font-size="6" font-family="Helvetica-Bold, Helvetica" font-weight="700" letter-spacing="-0.01em"><tspan x="-12.455" y="0">foodtech</tspan></text>
+  </g>
+</svg>
