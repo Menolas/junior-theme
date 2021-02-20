@@ -19,6 +19,8 @@ get_header();
         </ul>
       </div>
 
+
+
       <div class="blog-content">
         <ul class="blog-content-list">
           <li class="blog-content-item">
