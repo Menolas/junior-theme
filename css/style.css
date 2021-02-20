@@ -3226,6 +3226,21 @@ button {
   text-align: center;
   margin: 0; }
 
+.blog-content .blog-content__image-wrapper {
+  position: relative; }
+  .blog-content .blog-content__image-wrapper::before {
+    position: absolute;
+    content: "Подробнее...";
+    color: white;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    color: white;
+    z-index: 5;
+    display: none; }
+  .blog-content .blog-content__image-wrapper:hover::before {
+    display: block; }
+
 .blog-content .blog-content__image {
   border-radius: 20px;
   margin-bottom: 30px; }

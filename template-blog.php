@@ -26,17 +26,23 @@ get_header();
       <div class="blog-content">
         <ul class="blog-content__list">
           <li class="blog-content__item">
-            <img class="blog-content__image" src="../wp-content/themes/js-corp/images/blog/back_item.jpg" width="190" height="190" alt="background">
+            <div class="blog-content__image-wrapper">
+              <img class="blog-content__image" src="../wp-content/themes/js-corp/images/blog/back_item.jpg" width="190" height="190" alt="background">
+            </div>
             <h2 class="blog-content__title">Шаурма "По-Братски"</h2>
             <span class="blog-content__info">Мобильное приложение для онлайн-заказа, с собственной панелью управления и возможностью собирать отзывы клиентов.</span>
           </li>
           <li class="blog-content__item">
-            <img class="blog-content__image" src="../wp-content/themes/js-corp/images/blog/back_item.jpg" width="190" height="190" alt="background">
+            <div class="blog-content__image-wrapper">
+              <img class="blog-content__image" src="../wp-content/themes/js-corp/images/blog/back_item.jpg" width="190" height="190" alt="background">
+            </div>
             <h2 class="blog-content__title">Шаурма "По-Братски"</h2>
             <span class="blog-content__info">Мобильное приложение для онлайн-заказа, с собственной панелью управления и возможностью собирать отзывы клиентов.</span>
           </li>
           <li class="blog-content__item">
-            <img class="blog-content__image" src="../wp-content/themes/js-corp/images/blog/back_item.jpg" width="190" height="190" alt="background">
+            <div class="blog-content__image-wrapper">
+              <img class="blog-content__image" src="../wp-content/themes/js-corp/images/blog/back_item.jpg" width="190" height="190" alt="background">
+            </div>
             <h2 class="blog-content__title">Шаурма "По-Братски"</h2>
             <span class="blog-content__info">Мобильное приложение для онлайн-заказа, с собственной панелью управления и возможностью собирать отзывы клиентов.</span>
           </li>
