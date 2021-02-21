@@ -27,24 +27,30 @@ get_header();
         <ul class="blog-content__list">
           <li class="blog-content__item">
             <div class="blog-content__image-wrapper">
-              <img class="blog-content__image" src="../wp-content/themes/js-corp/images/blog/back_item.jpg" width="190" height="190" alt="background">
+              <img class="blog-content__image" src="../wp-content/themes/js-corp/images/blog/back_item.jpg" width="200" height="200" alt="background">
             </div>
-            <h2 class="blog-content__title">Шаурма "По-Братски"</h2>
-            <span class="blog-content__info">Мобильное приложение для онлайн-заказа, с собственной панелью управления и возможностью собирать отзывы клиентов.</span>
+            <div class="blog-content__item-description">
+              <h2 class="blog-content__title">Шаурма "По-Братски"</h2>
+              <span class="blog-content__info">Мобильное приложение для онлайн-заказа, с собственной панелью управления и возможностью собирать отзывы клиентов.</span>
+            </div>
           </li>
           <li class="blog-content__item">
             <div class="blog-content__image-wrapper">
-              <img class="blog-content__image" src="../wp-content/themes/js-corp/images/blog/back_item.jpg" width="190" height="190" alt="background">
+              <img class="blog-content__image" src="../wp-content/themes/js-corp/images/blog/back_item.jpg" width="200" height="200" alt="background">
             </div>
-            <h2 class="blog-content__title">Шаурма "По-Братски"</h2>
-            <span class="blog-content__info">Мобильное приложение для онлайн-заказа, с собственной панелью управления и возможностью собирать отзывы клиентов.</span>
+            <div class="blog-content__item-description">
+              <h2 class="blog-content__title">Шаурма "По-Братски"</h2>
+              <span class="blog-content__info">Мобильное приложение для онлайн-заказа, с собственной панелью управления и возможностью собирать отзывы клиентов.</span>
+            </div>
           </li>
           <li class="blog-content__item">
             <div class="blog-content__image-wrapper">
-              <img class="blog-content__image" src="../wp-content/themes/js-corp/images/blog/back_item.jpg" width="190" height="190" alt="background">
+              <img class="blog-content__image" src="../wp-content/themes/js-corp/images/blog/back_item.jpg" width="200" height="200" alt="background">
             </div>
-            <h2 class="blog-content__title">Шаурма "По-Братски"</h2>
-            <span class="blog-content__info">Мобильное приложение для онлайн-заказа, с собственной панелью управления и возможностью собирать отзывы клиентов.</span>
+            <div class="blog-content__item-description">
+              <h2 class="blog-content__title">Шаурма "По-Братски"</h2>
+              <span class="blog-content__info">Мобильное приложение для онлайн-заказа, с собственной панелью управления и возможностью собирать отзывы клиентов.</span>
+            </div>
           </li>
         </ul>
         <div id="true_loadmore" class="btn showmore__btn">Показать еще</div>
