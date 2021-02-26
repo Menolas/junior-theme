@@ -1094,10 +1094,7 @@ main {
     padding: 10px 0; }
   .choose-course {
     position: relative;
-    margin: 110px 0;
-    background-position: 300px, 20px;
-    background-image: url("../images/phone_education.svg");
-    background-repeat: no-repeat; }
+    margin: 110px 0; }
     .choose-course::before {
       content: "";
       display: block;
@@ -1129,6 +1126,10 @@ main {
       bottom: -99px;
       transform: rotate(180deg);
       bottom: -131px; }
+  .choose-course .container {
+    background-position: 150px, 20px;
+    background-image: url("../images/phone_education.svg");
+    background-repeat: no-repeat; }
   .choose-course__title {
     display: flex;
     font-weight: 400; }
