@@ -1,53 +1,51 @@
 .ecosystem {
-    position: relative;
-    margin:80px 0;
     width: 100%;
     color: $dark-text;
+    overflow: hidden;
+}
+
+.ecosystem__wrap {
+    width: 100%;
     background-color: $white;
-
-        &::before {
-        @include clouds(80px, -79px);
-    }
-
-    &::after {
-        @include clouds-bottom(80px, -79px, -78px);
-    }
 }
 
 .ecosystem .container {
     position: relative;
     padding-top: 115px;
     padding-bottom: 85px;
+}
 
-    &::before {
-        @include element-style(735px, 60px, transparent);
-        right: -600px;
-        bottom: 5px;
-        z-index: 300;
-        background-image: url("../images/svg/clouds.svg");
-        background-repeat: no-repeat;
-        background-size: 735px 52px;
-        background-position: left -30px bottom 10px;
-    }
+.ecosystem__background-content {
+    position: absolute;
+    right: -216px;
+    bottom: 10px;
+    width: 361px;
+    height: 388px;
+    overflow: hidden;
+    z-index: 100;
+}
 
-    &::after {
-        @include element-style(361px, 388px, transparent);
-        right: -220px;
-        bottom: 15px;
-        background-image: 
-            url("../images/svg/phone.svg"),
-            url("../images/svg/tablet.svg");
-        background-repeat:
-            no-repeat, 
-            no-repeat;
-        background-size:
-            158px 253px,
-            327px 388px;
-        background-position:
-            left 0 bottom -10px,
-            left 34px bottom 0;
-        z-index: 0;
-    }
+.ecosystem__background-content-tablet {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 327px;
+}
+
+.ecosystem__background-content-phone {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 158px;
+    z-index: 120;
+}
+
+.ecosystem__background-content-clouds {
+    position: absolute;
+    left: -10px;
+    bottom: 0;
+    width: 370px;
+    z-index: 130;
 }
 
 .ecosystem__title {
@@ -83,17 +81,8 @@
 
 @media (min-width: 768px) {
 
-    .ecosystem .container {
-
-        &::before {
-            right: -470px;
-            bottom: 10px;
-        }
-
-        &::after {
-            right: -120px;
-            bottom: 30px;
-        }
+    .ecosystem__background-content {
+        right: -70px;
     }
 
     .ecosystem p {
@@ -111,45 +100,29 @@
 }
 
 @media (min-width: 1024px) {
-
-    .ecosystem {
-        margin: 100px 0;
-        padding: 0;
-
-        &::before {
-            @include clouds(100px, -99px);
-        }
-
-        &::after {
-            @include clouds-bottom(100px, -99px, -98px);
-        }
-    }
-
+   
     .ecosystem .container {
         padding-top: 310px;
         padding-bottom: 197px;
-        overflow: visible;
+    }
 
-        &::before {
-            bottom: 0;
-            right: -300px;
-            height: 60px;
-            background-size: 735px 52px;
-            background-position: left 0 bottom 0;
-        }
+    .ecosystem__background-content {
+        right: -316px;
+        bottom: 0;
+        width: 730px;
+        height: 730px;
+    }
 
-        &::after {
-            right: -310px;
-            width: 723px;
-            height: 733px;            
-            bottom: -40px;
-            background-size:
-                351px 563px,
-                617px 733px;
-            background-position:
-                left 0 bottom 0,
-                left 106px bottom 0;
-        }
+    .ecosystem__background-content-tablet {
+        width: 617px;
+    }
+
+    .ecosystem__background-content-phone {
+        width: 351px;
+    }
+
+    .ecosystem__background-content-clouds {
+        width: 735px;
     }
 
     .ecosystem__title {
@@ -162,40 +135,14 @@
 }
 
 @media (min-width: 1440px) {
-
-    .ecosystem {
-        margin: 131px 0;
-
-        &::before {
-            @include clouds(131px, -130px);
-            background-position: 50%;
-        }
-
-        &::after {
-            @include clouds-bottom(131px, -129px, -129px);
-        }
-    }
-
+    
     .ecosystem .container {
         padding-top: 456px;
         padding-bottom: 150px;
+    }
 
-        &::before {
-            right: -340px;
-            bottom: -3px;
-            height: 70px;
-            background-size: 735px 65px;
-            background-position: left 0 bottom 0;
-
-        }
-
-        &::after {
-            right: -316px;
-            bottom: 0;
-            background-position: 
-                bottom -27px left 0,
-                bottom 0 left 106px;
-        }
+    .ecosystem__background-content {
+        bottom: 40px;
     }
 
     .ecosystem p {
@@ -204,22 +151,6 @@
     }
 
     .ecosystem__title {
-        max-width:660px;
-    }
-}
-
-@media (min-width: 1820px) {
-
-    .ecosystem {
-        margin: 200px 0;
-
-        &::before {
-            @include clouds(200px, -199px);
-            background-position: 50%;
-        }
-
-        &::after {
-            @include clouds-bottom(200px, -198px, -198px);
-        }
+        max-width: 660px;
     }
 }

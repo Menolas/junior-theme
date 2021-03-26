@@ -11,3 +11,9 @@
         </label>
     </div>
 </form>
+
+<!-- <?php if( is_active_sidebar('getnews-sidebar') ):?>
+                    
+    <?php dynamic_sidebar('getnews-sidebar');?>
+
+<?php endif;?> -->
