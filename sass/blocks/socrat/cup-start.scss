@@ -23,6 +23,10 @@
         margin-bottom: 14px;
         font-weight: 800;
     }
+
+    .btn-socrat {
+        margin-bottom: 7px;
+    }
 }
 
 .cup-start__text-block {
@@ -55,7 +59,7 @@
 
 @media (min-width: 1024px) {
     .cup-start {
-        padding-bottom: 70px;
+        padding-bottom: 10px;
         background-position: left 15% top 40px;
     }
     .cup-start::before {

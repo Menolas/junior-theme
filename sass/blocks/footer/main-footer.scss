@@ -22,6 +22,10 @@
 /* Стили для main-footer страницы Кубок Сократа */
 
 .main-footer--socrat {
+
+    .container::before {
+        display: none;
+    }
     .contact-us {
         position: static;
     }

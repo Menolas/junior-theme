@@ -47,11 +47,18 @@ $timer = get_post_meta(310, 'timer', true);
                     <div class="toggler">
                         <span></span>
                     </div>
-
+                    <div class="mobile-nav">
+                        <?php wp_nav_menu(
+                            array(
+                                'theme_location' => 'mobile-menu',
+                                'menu_class' => 'mobile-nav__list'
+                            )
+                        ); ?>
+                    </div>
                     <?php wp_nav_menu(
                         array(
                             'theme_location' => 'socrat-menu',
-                            'menu_class' => ''
+                            'menu_class' => 'main-nav__list'
                         )
                     ); ?>
                 </nav>

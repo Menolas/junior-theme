@@ -206,7 +206,7 @@
     </g>
     <g transform="matrix(1, 0, 0, 1, 1079.24, 153.93)" filter="url(#Кубок_Сократа_)">
       <text id="Кубок_Сократа_2" data-name="Кубок
-&quot;Сократа&quot;" transform="translate(315.76 157.07)" fill="#f5f7f8" font-size="43" font-family="SegoeUIBlack, Segoe UI" letter-spacing="-0.01em"><tspan x="-66.317" y="0">Кубок</tspan><tspan fill="#cee629"><tspan x="-111.386" y="39">&quot;Сократа&quot;</tspan></tspan></text>
+&quot;Сократа&quot;" transform="translate(315.76 157.07)" fill="#f5f7f8" font-size="43" font-family="SegoeUIBlack, Segoe UI" font-weight="800" letter-spacing="-0.01em"><tspan x="-66.317" y="0">Кубок</tspan><tspan fill="#cee629"><tspan x="-111.386" y="39">&quot;Сократа&quot;</tspan></tspan></text>
     </g>
   </g>
 </svg>

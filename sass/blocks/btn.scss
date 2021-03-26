@@ -38,16 +38,17 @@
 	@include link-style;
 	display: flex;
 	justify-content: center;
-	width: 250px;
+	min-width: 250px;
 	height: 44px;
 	align-items: center;
 	font-size: 16px;
 	color: $dark-text;
 	font-weight: 700;
 	white-space: nowrap;
-	border-radius: 30px;
+	border-radius: 10px;
 	background-color: $corp-green;
 	box-sizing: border-box;
+	box-shadow: 7px 6px 3px 0 rgba(0, 0, 0, 0.16);
 	cursor: pointer;
 
 	@media (max-width: 375px) {

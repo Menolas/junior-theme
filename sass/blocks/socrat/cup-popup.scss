@@ -1,0 +1,101 @@
+.cup-popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s ease 0s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cup-popup__wrap {
+    overflow-y: scroll;
+    max-height: 90%;
+    width: 90%;
+    position: relative;
+    opacity: 0;
+    transition: all 1s ease 0s;
+    transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+}
+
+.cup-popup__body {
+    min-height: 100%;
+    align-content: center;
+    justify-content: center;
+}
+
+.cup-popup.cup-popup--opened {
+    opacity: 1;
+    visibility: visible;
+}
+
+.cup-popup.cup-popup--opened .cup-popup__wrap {
+    opacity: 1;
+    transform: perspective(600px) translate(0px, 0px) rotateX(0deg);
+}
+
+.cup-popup__btn {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    color: white;
+}
+
+.cup-popup__icon {
+    position: absolute;
+    right: 66px;
+    top: 32px;
+    width: 90px;
+    height: 32px;
+    opacity: 0.3;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 1;
+        transition: all 1s ease 0s;
+    }
+    &:before {
+        transform: rotate(45deg);
+    }
+    &:after {
+        transform: rotate(-45deg);
+    }
+}
+
+.cup-popup__icon::before,
+.cup-popup__icon::after {
+    position: absolute;
+    left: 100px;
+    content: " ";
+    height: 20px;
+    width: 2px;
+    background-color: #333;
+}
+
+@media (max-width: 768px) {
+    .cup-popup__icon span {
+        @include visually-hidden;
+    }
+}
+
+@media (min-width: 768px) {
+    .cup-popup__wrap {
+        width: 70%;
+    }
+}
+
+@media (min-width: 1280px) {
+    .cup-popup__wrap {
+        width: 900px;
+    }
+}

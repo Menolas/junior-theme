@@ -58,6 +58,13 @@
     ::before {
         content: none;
     }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        list-style: none;
+    }
 }
 
 @media (min-width: 768px) {
@@ -76,10 +83,22 @@
         margin-left: 27px;
     }
 
-    .top-header--socrat .btn-socrat {
+/* Стили для main-footer страницы Кубок Сократа */
+
+    .top-header--socrat {
+    .main-nav {
+          ul {
+           flex-direction: row;
+            a {
+                padding-left: 0;
+            }
+        }}
+
+    .btn-socrat {
         display: block;
         order: 2;
         margin-left: 50px;
+        border-radius: 30px;}
     }
 }
 
