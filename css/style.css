@@ -830,16 +830,17 @@ html, body {
   font-size: inherit;
   display: flex;
   justify-content: center;
-  width: 250px;
+  min-width: 250px;
   height: 44px;
   align-items: center;
   font-size: 16px;
   color: #24272D;
   font-weight: 700;
   white-space: nowrap;
-  border-radius: 30px;
+  border-radius: 10px;
   background-color: #D1E92A;
   box-sizing: border-box;
+  box-shadow: 7px 6px 3px 0 rgba(0, 0, 0, 0.16);
   cursor: pointer; }
   @media (max-width: 375px) {
     .btn-socrat {
@@ -1864,6 +1865,12 @@ html, body {
 .top-header--socrat .main-nav ::before {
   content: none; }
 
+.top-header--socrat .main-nav ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  list-style: none; }
+
 @media (min-width: 768px) {
   .top-header {
     background-color: transparent; }
@@ -1874,10 +1881,16 @@ html, body {
   .top-header__btn {
     order: 3;
     margin-left: 27px; }
+  /* Стили для main-footer страницы Кубок Сократа */
+  .top-header--socrat .main-nav ul {
+    flex-direction: row; }
+    .top-header--socrat .main-nav ul a {
+      padding-left: 0; }
   .top-header--socrat .btn-socrat {
     display: block;
     order: 2;
-    margin-left: 50px; } }
+    margin-left: 50px;
+    border-radius: 30px; } }
 
 @media (min-width: 1440px) {
   .top-header__btn {
@@ -2248,6 +2261,9 @@ html, body {
   display: none; }
 
 /* Стили для main-footer страницы Кубок Сократа */
+.main-footer--socrat .container::before {
+  display: none; }
+
 .main-footer--socrat .contact-us {
   position: static; }
 
@@ -2762,11 +2778,17 @@ html, body {
 .main-offer--socrat {
   background-image: url("../images/svg/socrat-main-bg.svg");
   background-repeat: no-repeat;
+<<<<<<< HEAD
+  background-size: 320px;
+  background-position: bottom 272px left 10px;
+  padding-bottom: 30px;
+=======
   background-size: 345px;
   background-position: bottom 200px left 20px; }
 
 .main-offer--socrat .container {
   padding-bottom: 110px;
+>>>>>>> 82c48272ae1cd7722e1378199852fcb46d625cec
   padding-top: 25px; }
 
 .main-offer--socrat .main-offer__text-block {
@@ -2783,8 +2805,16 @@ html, body {
   letter-spacing: 1px;
   line-height: 1.2; }
 
+.main-offer--socrat .title__secondary .title__colored {
+  color: #DF3551; }
+
 .main-offer--socrat .btn-socrat {
-  margin-right: auto; }
+  margin-right: auto;
+  margin-bottom: 70px; }
+
+.main-offer--socrat .title__secondary {
+  text-align: center;
+  font-size: 20px; }
 
 @media (min-width: 375px) {
   /* Стили для main-offer главной страницы */
@@ -2811,10 +2841,16 @@ html, body {
   .main-offer--startup p {
     width: 72%; }
   /* Стили для main-offer страницы Кубок Сократа */
+  .main-offer--socrat {
+    background-size: 345px;
+    background-position: bottom 272px left 20px; }
   .main-offer--socrat title {
     font-size: 50px; }
   .main-offer--socrat p {
-    font-size: 25px; } }
+    font-size: 25px; }
+  .main-offer--socrat .title__secondary {
+    font-size: 22px;
+    text-align: left; } }
 
 @media (min-width: 768px) {
   .main-offer__text-block {
@@ -2842,13 +2878,30 @@ html, body {
   /* Стили для main-offer страницы Кубок Сократа*/
   .main-offer--socrat {
     background-size: 360px;
+<<<<<<< HEAD
+    background-position: bottom 190px right;
+    padding-bottom: 90px; }
+=======
     background-position: bottom 218px right; }
   .main-offer--socrat .container {
     padding-top: 40px; }
+>>>>>>> 82c48272ae1cd7722e1378199852fcb46d625cec
   .main-offer--socrat p {
     font-size: 28px;
     width: 50%;
-    padding-bottom: 0; } }
+    padding-bottom: 0; }
+  .main-offer--socrat .btn-socrat {
+    margin-bottom: 0;
+    align-self: center; }
+  .main-offer--socrat .title__secondary {
+    font-size: 30px;
+    order: 1;
+    justify-self: self-end;
+    margin-bottom: 0;
+    text-align: center; }
+  .main-offer__socrat-inner-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr; } }
 
 @media (min-width: 1024px) {
   .main-offer .container {
@@ -2899,9 +2952,12 @@ html, body {
   /* Стили для main-offer страницы Кубок Сократа*/
   .main-offer--socrat {
     background-size: 500px;
-    background-position: bottom 151px right; }
+    background-position: bottom 235px right;
+    padding-bottom: 120px; }
   .main-offer--socrat .title {
     font-size: 60px; }
+  .main-offer--socrat .title__secondary {
+    font-size: 38px; }
   .main-offer--socrat p {
     width: 50%;
     padding-bottom: 0; } }
@@ -3000,7 +3056,8 @@ html, body {
   /* Стили для main-offer страницы Кубок Сократа*/
   .main-offer--socrat {
     background-size: 550px;
-    background-position: bottom 151px right 15%; }
+    background-position: bottom 248px right 15%;
+    padding-bottom: 135px; }
   .main-offer--socrat p {
     font-size: 34px;
     width: 60%; } }
@@ -3015,7 +3072,7 @@ html, body {
   /* Стили для main-offer страницы Кубок Сократа*/
   .main-offer--socrat {
     background-size: 550px;
-    background-position: bottom 151px right 27%; } }
+    background-position: bottom 265px right 27%; } }
 
 .ecosystem {
   width: 100%;
@@ -4923,6 +4980,8 @@ html, body {
   .cup-start .title__secondary {
     margin-bottom: 14px;
     font-weight: 800; }
+  .cup-start .btn-socrat {
+    margin-bottom: 7px; }
 
 .cup-start__text-block {
   font-size: 20px;
@@ -4945,7 +5004,7 @@ html, body {
 
 @media (min-width: 1024px) {
   .cup-start {
-    padding-bottom: 70px;
+    padding-bottom: 10px;
     background-position: left 15% top 40px; }
   .cup-start::before {
     content: "";
@@ -5163,6 +5222,9 @@ html, body {
     font-weight: 800;
     font-size: 25px;
     text-align: center; }
+  .cup-award .btn-socrat {
+    margin-top: 25px;
+    margin-bottom: 7px; }
 
 .cup-award__text-block {
   line-height: 1.66;
@@ -5209,6 +5271,8 @@ html, body {
   font-size: 10px; }
 
 @media (min-width: 375px) {
+  .cup-award .btn-socrat {
+    margin: 25px auto 7px auto; }
   .cup-award__item {
     margin: 0 auto;
     margin-bottom: 15px;
@@ -5305,82 +5369,130 @@ html, body {
     font-size: 13px; } }
 
 @media (min-width: 1820px) {
-  .cup-award::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 170px;
-    background-color: transparent;
-    top: -160px;
-    left: 0;
-    background-image: url("../images/svg/clouds.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 39%; }
-  .cup-award::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 190px;
-    background-color: transparent;
-    top: -150px;
-    left: 0;
-    background-image: url("../images/svg/clouds.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 39%;
-    top: unset;
-    bottom: -170px;
-    transform: rotate(180deg); } }
+  .cup-award {
+    padding-bottom: 25px; }
+    .cup-award::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 170px;
+      background-color: transparent;
+      top: -160px;
+      left: 0;
+      background-image: url("../images/svg/clouds.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 39%; }
+    .cup-award::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 190px;
+      background-color: transparent;
+      top: -150px;
+      left: 0;
+      background-image: url("../images/svg/clouds.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 39%;
+      top: unset;
+      bottom: -170px;
+      transform: rotate(180deg); } }
 
-.cup-guarantee {
+.cup-popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s ease 0s;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.cup-popup__wrap {
+  overflow-y: scroll;
+  max-height: 90%;
+  width: 90%;
   position: relative;
-  margin: 0;
-  padding-top: 15px;
-  color: white;
-  background-repeat: no-repeat;
-  background-size: 305px;
-  background-position: -560% 92%;
-  padding-bottom: 15px; }
-  .cup-guarantee .title__colored {
-    color: #DF3551; }
-  .cup-guarantee .title__secondary {
-    margin-bottom: 14px;
-    font-weight: 800; }
+  opacity: 0;
+  transition: all 1s ease 0s;
+  transform: perspective(600px) translate(0px, -100%) rotateX(45deg); }
 
-.cup-guarantee__text-block {
-  font-size: 20px;
-  line-height: 1.66;
-  margin-bottom: 25px; }
+.cup-popup__body {
+  min-height: 100%;
+  align-content: center;
+  justify-content: center; }
+
+.cup-popup.cup-popup--opened {
+  opacity: 1;
+  visibility: visible; }
+
+.cup-popup.cup-popup--opened .cup-popup__wrap {
+  opacity: 1;
+  transform: perspective(600px) translate(0px, 0px) rotateX(0deg); }
+
+.cup-popup__btn {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  color: white; }
+
+.cup-popup__icon {
+  position: absolute;
+  right: 66px;
+  top: 32px;
+  width: 90px;
+  height: 32px;
+  opacity: 0.3;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 21px;
+  cursor: pointer; }
+  .cup-popup__icon:hover {
+    opacity: 1;
+    transition: all 1s ease 0s; }
+  .cup-popup__icon:before {
+    transform: rotate(45deg); }
+  .cup-popup__icon:after {
+    transform: rotate(-45deg); }
+
+.cup-popup__icon::before,
+.cup-popup__icon::after {
+  position: absolute;
+  left: 100px;
+  content: " ";
+  height: 20px;
+  width: 2px;
+  background-color: #333; }
+
+@media (max-width: 768px) {
+  .cup-popup__icon span {
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+            clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden; } }
 
 @media (min-width: 768px) {
-  .cup-guarantee {
-    background-image: url("../images/svg/prize.svg");
-    background-repeat: no-repeat;
-    background-size: 150px;
-    background-position: right 20% top 85px;
-    padding-top: 75px; }
-    .cup-guarantee .title__secondary {
-      width: 60%; }
-  .cup-guarantee__text-block {
-    width: 60%; } }
+  .cup-popup__wrap {
+    width: 70%; } }
 
-@media (min-width: 1024px) {
-  .cup-guarantee {
-    background-position: right 20% top 90px; }
-    .cup-guarantee .title__secondary {
-      width: 52%; }
-  .cup-guarantee__text-block {
-    width: 43%; } }
-
-@media (min-width: 1440px) {
-  .cup-guarantee {
-    background-position: right 30% top 90px;
-    background-size: 180px; }
-  .cup-guarantee__text-block {
-    width: 37%; } }
+@media (min-width: 1280px) {
+  .cup-popup__wrap {
+    width: 900px; } }
 
 .footer-info-socrat {
   display: flex;

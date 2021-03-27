@@ -18,7 +18,12 @@ get_header('socrat'); ?>
                     обучение одной из
                     современных&nbsp;профессий.</p>
             </div>
-            <button class="btn-socrat">Принять участие</button>
+            <div class='main-offer__socrat-inner-wrap'>
+                <h2 class="title__secondary">
+                    Гарантированный&nbsp;приз<br><span class="title__colored">каждому&nbsp;участнику</span>
+                </h2>
+                <button class="btn-socrat">Принять участие</button>
+            </div>
         </div>
     </section>
     <section class="cup-start">
@@ -125,28 +130,60 @@ get_header('socrat'); ?>
                         приложении Sokrat.</p>
                 </li>
             </ul>
-        </div>
-    </section>
-    <section class="cup-guarantee">
-        <div class="container">
-            <h2 class="title__secondary">
-                Гарантированный
-                приз <span class="title__colored"> каждому участнику</span>
-            </h2>
-            <p class="cup-guarantee__text-block">
-                Каждый участник, принявший
-                участие в кубке "Сократа",
-                получит приз после того, как
-                ответит на все вопросы.
-            </p>
             <button class="btn-socrat">Принять участие</button>
         </div>
     </section>
+    <!-- Online Test Pad Test Widget (#145827)-->
+    <section class="cup-popup">
 
+        <div class="cup-popup__wrap"><button class="cup-popup__btn"><span class="cup-popup__icon"><span>Закрыть</span></span></button>
+            <div class="cup-popup__body" id="otp_wgt_hrm6yprox24ki">
 
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        var otp_wjs_dt = (new Date).getTime();
+        (function(w, d, n, s, rp) {
+            w[n] = w[n] || [];
+            rp = {};
+            w[n].push(function() {
+                otp_render_widget(d.getElementById("otp_wgt_hrm6yprox24ki"), 'onlinetestpad.com', 'hrm6yprox24ki', rp);
+            });
+            s = d.createElement("script");
+            s.type = "text/javascript";
+            s.src = "//onlinetestpad.com/js/widget.js?" + otp_wjs_dt;
+            s.async = true;
+            d.getElementsByTagName("head")[0].appendChild(s);
+        })(this, this.document, "otp_widget_callbacks");
+    </script>
+    <script>
+        const popupButtons = document.querySelectorAll('.btn-socrat');
+        const popup = document.querySelector('.cup-popup');
 
+        const isEscEvent = (evt) => {
+            return evt.key === 'Escape' || evt.key === 'Esc';
+        };
 
+        const onDocumentKeyDown = (evt) => {
+            if (isEscEvent(evt)) {
+                popup.classList.remove('cup-popup--opened');
+                document.removeEventListener('keydown', onDocumentKeyDown);
+            }
+        }
 
+        for (let i = 0; i <= popupButtons.length; i++) {
+            const popupButton = popupButtons[i];
+            popupButton.addEventListener('click', (evt) => {
+                evt.preventDefault();
+                popup.classList.add('cup-popup--opened');
+                popup.addEventListener('click', () => {
+                    popup.classList.remove('cup-popup--opened');
+                });
+                document.addEventListener('keydown', onDocumentKeyDown);
+            })
+        }
+    </script>
 </main>
 
 <?php get_footer('socrat'); ?>
